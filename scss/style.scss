@@ -1,0 +1,125 @@
+// Font import
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+$bg : #139dc8;
+$box-bg : #fff;
+$btn-bg : #252525;
+$real-price-color:#1fd6b0;
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background: $bg;
+    font-family: Poppins;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20vh 0;
+}
+
+.box{
+    display: block;
+    position: relative;
+    height: 70vh;
+    width: 350px;
+    margin: 0 50px;
+    align-items: center;
+    text-align: center;
+    transition: 0.4s all !important;
+    
+    .half-box{
+        transition: 0.2s all !important;
+        width: 100%;
+        height: calc(70vh + 70px);
+        background: $box-bg;
+        border-radius: 5px;
+        line-height: 20px;
+        position: absolute;
+        transform: scale(0);
+
+        .text-film{
+            margin-top: 510px;
+        }
+    }
+
+    .pre-box{
+        position: absolute;
+        transform: translateY(-30px);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        z-index: 100;
+        
+        img{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-radius: 5px;
+            width: 300px;
+            height: 500px;
+        }
+    }
+
+    .header-film{
+        font-size: 25px;
+        font-weight: 600;
+        font-family: Poppins;
+        margin: 20px 0;
+    }
+
+    .para-film{
+        font-family: Poppins;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: 500;
+    }
+    
+    .price{
+        margin: 20px 0;
+        font-weight: 500;
+
+        .real-price{
+            font-size: 25px;
+            color: $real-price-color;
+            margin: 10px 0;
+        }
+
+        .pre-price{
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.5);
+            text-decoration: line-through;
+        }
+    }
+
+    .foo-btn button{
+        background: $btn-bg;
+        width: 100%;
+        padding: 20px 50px;
+        font-family: Poppins;
+        color: #fff;
+        border: none;
+        border-radius: 0 0 5px 5px;
+        font-size: 20px;
+        transition: 0.3s all;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+
+}
+
+
+
+.box:hover .half-box{
+    transform: scale(1);
+}

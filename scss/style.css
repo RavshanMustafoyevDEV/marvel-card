@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background: #139dc8;
+  font-family: Poppins;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20vh 0;
+}
+
+.box {
+  display: block;
+  position: relative;
+  height: 70vh;
+  width: 350px;
+  margin: 0 50px;
+  align-items: center;
+  text-align: center;
+  transition: 0.4s all !important;
+}
+.box .half-box {
+  transition: 0.2s all !important;
+  width: 100%;
+  height: calc(70vh + 70px);
+  background: #fff;
+  border-radius: 5px;
+  line-height: 20px;
+  position: absolute;
+  transform: scale(0);
+}
+.box .half-box .text-film {
+  margin-top: 510px;
+}
+.box .pre-box {
+  position: absolute;
+  transform: translateY(-30px);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 100;
+}
+.box .pre-box img {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+  width: 300px;
+  height: 500px;
+}
+.box .header-film {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: Poppins;
+  margin: 20px 0;
+}
+.box .para-film {
+  font-family: Poppins;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+.box .price {
+  margin: 20px 0;
+  font-weight: 500;
+}
+.box .price .real-price {
+  font-size: 25px;
+  color: #1fd6b0;
+  margin: 10px 0;
+}
+.box .price .pre-price {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: line-through;
+}
+.box .foo-btn button {
+  background: #252525;
+  width: 100%;
+  padding: 20px 50px;
+  font-family: Poppins;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 5px 5px;
+  font-size: 20px;
+  transition: 0.3s all;
+}
+.box .foo-btn button:hover {
+  cursor: pointer;
+}
+
+.box:hover .half-box {
+  transform: scale(1);
+}/*# sourceMappingURL=style.css.map */
