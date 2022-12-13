@@ -37,6 +37,7 @@ body {
   line-height: 20px;
   position: absolute;
   transform: scale(0);
+  height: 110%;
 }
 .box .half-box .text-film {
   margin-top: 510px;
